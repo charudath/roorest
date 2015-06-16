@@ -1,12 +1,13 @@
-// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2015-06-16 12:29:36
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2015-06-16 23:04:23
 project --topLevelPackage com.charu.roorest
 jpa setup --database MYSQL --provider HIBERNATE --hostName localhost --userName root --password password --databaseName roorest
 database introspect --schema no-schema-required 
-database reverse engineer --schema roorest  --excludeTables "jbpm4_* acct_v8" --package com.charu.roorest.domain
+database reverse engineer --schema roorest  --excludeTables "jbpm4_* acct_v8" --package com.charu.roorest.domain --testAutomatically
 json all
 web mvc json setup
 web mvc json all
 perform package
 perform eclipse
 exit
-// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2015-06-16 13:47:59
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2015-06-16 23:05:14
+mvn clean package jetty:run -DskipTests

@@ -3,7 +3,7 @@
     <option key="moduleName" value=""/>
     <option key="activeRecord" value="true"/>
     <option key="includeNonPortableAttributes" value="false"/>
-    <option key="testAutomatically" value="false"/>
+    <option key="testAutomatically" value="true"/>
     <table name="account">
         <column name="id" primaryKey="true" required="true" scale="0" size="10" type="4,INT"/>
         <column name="name" primaryKey="false" required="false" scale="0" size="90" type="12,VARCHAR"/>

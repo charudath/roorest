@@ -239,6 +239,8 @@
         </dependency>
     </dependencies>
     <build>
+    <directory>${project.basedir}/target</directory>
+  	<outputDirectory>${project.basedir}/src/main/webapp/WEB-INF/classes</outputDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
